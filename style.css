@@ -1,5 +1,8 @@
 html {
   box-sizing: border-box;
+  --primary-green: #10520B;
+  --primary-white: whitesmoke;
+  --primary-font: 'Fraunces';
 }
 
 *,
@@ -9,8 +12,8 @@ html {
 }
 
 * {
-  border: 2px solid darkgreen;
-  background-color: whitesmoke;
+  /* border: 2px solid darkgreen; */
+  background-color: var(--primary-white);
 }
 
 body {
@@ -27,7 +30,7 @@ nav {
 }
 
 nav a {
-  font-family: 'Fraunces', serif;
+  font-family: var(--primary-font, serif);
   font-weight: 300;
   color: #333;
   text-decoration: none;
@@ -52,14 +55,14 @@ section {
   height: 400px; 
   margin: 50px auto;
   border-radius: 9999px;
-  background: #10520B;
+  background: var(--primary-green);
 
 }
 
 h1 {
   color: black;
   font-size: 70px;
-  font-family: 'Fraunces', serif;
+  font-family: var(--primary-font, serif);
   font-weight: 800;
   word-wrap: break-word;
   margin: auto;
@@ -70,10 +73,9 @@ h1 {
 p {
   color: black; 
   font-size: 20px; 
-  font-family: 'Fraunces', serif;
+  font-family: var(--primary-font, serif);
   font-weight: 400; 
   word-wrap: break-word;
-  font-family: 'Fraunces', serif;
 }
 
 p#left {
@@ -98,7 +100,7 @@ p#left {
 #Rectangle {
   width: 550px;
   height: 400px;
-  background: #10520B;
+  background: var(--primary-green);
   margin: 30px;
   border-radius: 25px;
 }
@@ -106,24 +108,11 @@ p#left {
 #rectangle {
   height: 200px;
   flex: 1;
-  background: #10520B;
+  background: var(--primary-green);
   margin: 10px;
   border-radius: 25px;
 }
 
-/* .section5 #flex {
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.section5 #ellipse {
-  flex: 0 0 25%;
-  width: 100px;
-  height: 100px;
-  box-sizing: border-box;
-  background: #10520B;
-  border-radius: 25px;
-} */
 
 .grid {
   margin: auto;
@@ -153,31 +142,48 @@ p#left {
 .section5 button {
   border-radius: 25px;
   font-size: 50px;
-  background-color: transparent;
+  background-color: var(--primary-white);
   border: 5px;
+  color: black;
 }
 
 
 button {
   justify-content: center;
-  font-family: 'Fraunces', serif;
+  font-family: var(--primary-font, serif);
   transition-duration: 0.4s;
+  position: relative;
 
 }
 
 .section6 button {
   width: 80px;
   height: 80px;
-  border-color: #10520B;
+  border-color: var(--primary-green);
   border-radius: 9999px;
 }
 
-
-button:hover {
-  background-color: #10520B; 
-  color: white;
+.section6 button:hover {
+  background-color: var(--primary-green);
+}
+.section5 button:hover {
+  background-color: transparent;
   z-index: 1;
   
 }
+ 
+.show {
+  justify-content: center;
+  align-items: center;
+  display: none;
+  font-family: var(--primary-font, serif);
+  background-color: var(--primary-green);
+  border-color: var(--primary-green);
+  color: var(--primary-white);
+  border-radius: 25px;
+  font-size: 40px;
+}
+
+
 
 

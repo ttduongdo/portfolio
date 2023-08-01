@@ -9,9 +9,7 @@
 </head>
 
 <body>
-  <script>
   
-  </script>
   <nav>
     <a href=".section1">Home</a>
     <a href=".section2">Project 1</a>
@@ -62,21 +60,20 @@
   <section class="section5">
     <h1>Skills</h1>
     <div class="grid">
-      <button class="one">programming langs</button>
-      <button class="two">web dev</button>
-      <button class="three">statistics</button>
-      <button class="four">VCS</button>
+      <button class="button one">programming langs</button>
+        <div class="show one" style="grid-area: 1/ 1/ 2/ 3">Python</div>
+        <div class="show one" style="grid-area: 2/ 1/ 3/ 3">Java</div>
+        <div class="show one" style="grid-area: 3/ 1/ 4/ 3">Javascript</div>
+        <div class="show one" style="grid-area: 4/ 1/ 5/ 3">R</div>
+      <button class="button two">web dev</button>
+        <div class="show two" style="grid-area: 3/ 3/ 4/ 4">HTML</div>
+        <div class="show two" style="grid-area: 3/ 4/ 4/ 5">CSS</div>
+        <div class="show two" style="grid-area: 3/ 5/ 4/ 6">Node.js</div>
+      <button class="button three">statistics</button>
+        <div class="show three" style="grid-area: 4/ 3/ 5/ 6">RStudio</div>
+      <button class="button four">VCS</button>
+        <div class="show four" style="grid-area: 1/ 3/ 3/ 6">Git/Github</div>
     </div>
-    <!-- <div id="flex">
-      <div id="ellipse">Python</div>
-      <div id="ellipse">Java</div>
-      <div id="ellipse">CSS</div>
-      <div id="ellipse">HTML</div>
-      <div id="ellipse">Javascript</div>
-      <div id="ellipse">Git</div>
-      <div id="ellipse">RStudio</div>
-      <div id="ellipse">R</div>
-    </div> -->
   </section>
 
   <section class="section6">
@@ -92,17 +89,6 @@
     </div>
     
   </section>
-
-  <script>
-    // Smooth scrolling when clicking on navigation links
-    document.querySelectorAll('nav a').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
