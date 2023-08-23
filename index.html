@@ -12,8 +12,8 @@
   
   <nav>
     <a href=".section1">Home</a>
-    <a href=".section2">Project 1</a>
-    <a href=".section3">Project 2</a>
+    <a href=".section2">About</a>
+    <a href=".section3">Projects</a>
     <a href=".section4">Experience</a>
     <a href=".section5">Skills</a>
     <a href=".section6">Contact</a>
@@ -26,25 +26,39 @@
     <p><br>Based in Hanoi and Massachusetts.<br/>Currently a sophomore at Smith College. </p>
   </section>
 
-  <section class="section2">
-    <div id="flex">
-      <div id="Rectangle"></div>
-      <div>
-        <div id="description">
-        <h1>Pizza Hangman</h1>
-        <p>kflawdjflk</p>
-        </div>
-      </div>
+  <section class="section2" id="flex">
+        <a id="resume" href="Duong-Do-resume-2308 copy.pdf" target="_blank">
+          <img src="Duong-Do-resume-2308-1.png" alt="Your Resume"/>
+          <div id="layer">
+            <p>Open in new tab</p>
+          </div>
+          
+        </a>
+      <div id="description">
+        <h1>About Me</h1>
+        <p>I am an <i>enthusiastic</i> and <i>goal-driven</i> student, deeply passionate about becoming a proficient Software Engineer and Data Scientist/Analyst. 
+          <br>I am <i>actively seeking</i> opportunities that not only enhance my technical prowess but also provide a comprehensive insight into the dynamic industry landscape.
+          <br>My eagerness to learn drives me to join a team of experienced professionals where I can contribute to the creation of impactful products. I am excited to collaborate with like-minded individuals and work together to bring innovative ideas to life.
+          <br>If you're looking for a dedicated and driven team member, I would love the chance to discuss how I can add value to your team.
+        </p>
   </section>
 
   <section class="section3">
-    <div id="flex">
         <div id="description">
-          <h1>Lego Population Analysis</h1>
-          <p>kflawdjflk</p>
+          <h1>My Projects</h1>
+          <p>Here are some of the programming projects I've made in the past year.</p>
         </div>
-        <div id="Rectangle"></div>
-    </div>
+        <div class="slideshow">
+          
+          <a id="project" href=""><img class="slide" src="rps.png"></a>
+          <a id="project" href=""><img class="slide" src="etch.png"></a>
+          <a id="project" href=""><img class="slide" src="ttt.png"></a>
+          <a id="project" href=""><img class="slide" src="pizza1.png"></a>
+          <a id="project" href=""><img class="slide" src="pizza2.png"></a>
+          <button class="change left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="change right" onclick="plusDivs(+1)">&#10095;</button>
+       
+        </div>
   </section>
 
   <section class="section4">
@@ -76,8 +90,7 @@
     </div>
   </section>
 
-  <section class="section6">
-    <div id="flex">
+  <section class="section6" id="flex">
       <div><h1>Get to know me at</h1></div>
       <div>
         <p id="left">Email: duongttdo@gmail.com<br/><br/>Phone: (+1) 413 472 6095 | (+84) 967 425 004</p>
@@ -85,8 +98,8 @@
             <div><button onclick="window.open('https://www.linkedin.com/in/duong-do-a55a70264/', '_blank');">Linkedin</button></div>
             <div><button onclick="window.open('https://github.com/duongttdo', '_blank');">GitHub</button></div>
             <div><button type="button">CV</button></div>
+        </div>
       </div>
-    </div>
     
   </section>
   <script src="script.js"></script>
