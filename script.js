@@ -7,20 +7,6 @@ document.querySelectorAll('nav a').forEach(anchor => {
       });
     });
 
-const buttons = Array.from(document.querySelectorAll('.button'));
-buttons.forEach(button => button.addEventListener('mouseover', () => {
-    button.classList.add('hovered');
-    button.style.color = 'transparent';
-  
-    const shows = Array.from(document.querySelectorAll('.show'));
-    shows.forEach(show => show.style.display = "flex");
-
-}))
-buttons.forEach(button => button.addEventListener('mouseout', () => {
-    button.classList.remove('hovered');
-    button.style.color = 'black';
-}))
-
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -54,6 +40,20 @@ document.addEventListener("DOMContentLoaded", function () {
     link.href = projectURLs[index];
   });
 });
+
+function doGet(e) {
+  var params = e.parameter;
+  var name = params.name;
+  var email = params.email;
+  var message = params.message;
+
+  var ss = SpreadsheetApp.openById('1uefnZeF3tCkLFdzoLSYiE3DtoWDXpg5AIgCWt6JpLRE');
+  var sheet = ss.getSheetByName('port contact box'); // Change the sheet name if necessary
+
+  sheet.appendRow([name, email, message]);
+
+  return ContentService.createTextOutput('Form submitted successfully.');
+}
 
 
 

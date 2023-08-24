@@ -3,12 +3,14 @@
 <head>
   <title> ngu Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animation.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  
   
   <nav>
     <a href=".section1">Home</a>
@@ -27,13 +29,14 @@
   </section>
 
   <section class="section2" id="flex">
-        <a id="resume" href="Duong-Do-resume-2308 copy.pdf" target="_blank">
-          <img src="Duong-Do-resume-2308-1.png" alt="Your Resume"/>
-          <div id="layer">
-            <p>Open in new tab</p>
-          </div>
-          
-        </a>
+      <a id="resume" href="Duong-Do-resume-2308 copy.pdf" target="_blank">
+        <img src="Duong-Do-resume-2308-1.png" alt="Your Resume"/>
+        <div id="layer">
+          <p>Open in new tab</p>
+        </div>
+        
+      </a>
+
       <div id="description">
         <h1>About Me</h1>
         <p>I am an <i>enthusiastic</i> and <i>goal-driven</i> student, deeply passionate about becoming a proficient Software Engineer and Data Scientist/Analyst. 
@@ -41,12 +44,14 @@
           <br>My eagerness to learn drives me to join a team of experienced professionals where I can contribute to the creation of impactful products. I am excited to collaborate with like-minded individuals and work together to bring innovative ideas to life.
           <br>If you're looking for a dedicated and driven team member, I would love the chance to discuss how I can add value to your team.
         </p>
+      </div>
   </section>
 
   <section class="section3">
         <div id="description">
           <h1>My Projects</h1>
-          <p>Here are some of the programming projects I've made in the past year.</p>
+          <p>Here are some of the <b>programming projects I've made</b> in the past year.</p>
+          <p>Click to open in GitHub!</p>
         </div>
         <div class="slideshow">
           
@@ -55,8 +60,8 @@
           <a id="project" href=""><img class="slide" src="ttt.png"></a>
           <a id="project" href=""><img class="slide" src="pizza1.png"></a>
           <a id="project" href=""><img class="slide" src="pizza2.png"></a>
-          <button class="change left" onclick="plusDivs(-1)">&#10094;</button>
-          <button class="change right" onclick="plusDivs(+1)">&#10095;</button>
+          <button class="change left" onclick="plusDivs(-1)" style="font-size: 20px;">&#10094;</button>
+          <button class="change right" onclick="plusDivs(+1)" style="font-size: 20px;">&#10095;</button>
        
         </div>
   </section>
@@ -73,35 +78,95 @@
 
   <section class="section5">
     <h1>Skills</h1>
-    <div class="grid">
-      <button class="button one">programming langs</button>
-        <div class="show one" style="grid-area: 1/ 1/ 2/ 3">Python</div>
-        <div class="show one" style="grid-area: 2/ 1/ 3/ 3">Java</div>
-        <div class="show one" style="grid-area: 3/ 1/ 4/ 3">Javascript</div>
-        <div class="show one" style="grid-area: 4/ 1/ 5/ 3">R</div>
-      <button class="button two">web dev</button>
-        <div class="show two" style="grid-area: 3/ 3/ 4/ 4">HTML</div>
-        <div class="show two" style="grid-area: 3/ 4/ 4/ 5">CSS</div>
-        <div class="show two" style="grid-area: 3/ 5/ 4/ 6">Node.js</div>
-      <button class="button three">statistics</button>
-        <div class="show three" style="grid-area: 4/ 3/ 5/ 6">RStudio</div>
-      <button class="button four">VCS</button>
-        <div class="show four" style="grid-area: 1/ 3/ 3/ 6">Git/Github</div>
+    <div id="block">
+      <h2 class="languages">Languages</h2>
+      <div id="flex" id="languages">
+        <div id="block" style="margin-left: 20px">
+          <img class="item" src="python.png">
+          <p class="detail">Python: Proficient</p>
+        </div>
+        <div id="block">
+          <img class="item" src="java.png">
+          <p class="detail">Java: Proficient</p>
+        </div>
+        <div id="block">
+          <img class="item" src="html-5.png">
+          <p class="detail">HTML: Proficient</p>
+        </div>
+        <div id="block">
+          <img class="item" src="css-3 (1).png">
+          <p class="detail">CSS: Proficient</p>
+        </div>
+        <div id="block"> 
+          <img class="item" src="js.png">
+          <p class="detail">Javascript: Proficient</p>
+        </div>
+        <div id="block">
+          <img class="item" src="r.png" style="width: 180px; height: 140px; object-fit: fill;">
+          <p class="detail">R: Proficient</p>
+        </div> 
+      </div>
+    </div>
+
+    <div id="block">
+      <h2 class="tools">Tools</h2>
+      <div id="flex" id="tools">
+        <div id="block">
+          <img class="item" src="github.png">
+          <p class="detail">GitHub: Proficient</p>
+        </div>
+        <div id="block">
+          <img class="item" src="terminal.png">
+          <p class="detail">Terminal: Proficient</p>
+        </div>
+        <div id="block">
+          <img class="item" src="vscode.png" style="object-fit: fill;">
+          <p class="detail">VS Code: Proficient</p>
+        </div>
+        <div id="block">
+          <img class="item" src="rstudio.png" style="object-position: 0 0;">
+          <p class="detail">RStudio: Proficient</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="section6" id="flex">
-      <div><h1>Get to know me at</h1></div>
-      <div>
-        <p id="left">Email: duongttdo@gmail.com<br/><br/>Phone: (+1) 413 472 6095 | (+84) 967 425 004</p>
+      <div id="block">
+        <h1>Contact me at</h1>
         <div id="flex">
-            <div><button onclick="window.open('https://www.linkedin.com/in/duong-do-a55a70264/', '_blank');">Linkedin</button></div>
-            <div><button onclick="window.open('https://github.com/duongttdo', '_blank');">GitHub</button></div>
-            <div><button type="button">CV</button></div>
+          <a href="mailto:duongttdo@gmail.com"><img src="gmail.png" alt="gmail"></a>
+          <a href="https://www.linkedin.com/in/duong-do-tt/"><img src="linkedin.png" alt="linkedin" style="width: 40px; height: 40px"></a>
         </div>
       </div>
     
+      <div>
+        <form id="form" action="submit.php" method="post">
+          <legend>Or drop me a message and I will respond as soon as possible!</legend>
+          <div>
+              <label for="name">Name: </label>
+              <input type="text" id="name" name="name" placeholder="Duong Do" required>
+          </div>
+          
+          <div>
+              <label for="email">Email: </label>
+              <input type="text" id="email" name="email" placeholder="xyz@gmail.com" required>
+          </div>
+
+          <div style="display: flex; flex-direction: column">
+              <label for="message">Leave a note: </label>
+              <input type="text" id="message" name="message" style="width: 250px; height: 120px">
+          </div>
+
+          <div>
+              <button type="submit" class="submit button" style="font-family: var(--primary-font); font-size: 18px;">Submit</button>
+          </div>
+
+        </form> 
+      </div>
   </section>
+
+  <div class="grain"></div>
   <script src="script.js"></script>
 </body>
 </html>
