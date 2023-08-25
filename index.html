@@ -2,6 +2,7 @@
 <html>
 <head>
   <title> Robbie's Portfolio</title>
+  <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' https://drive.google.com https://accounts.google.com;">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="animation.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -169,15 +170,15 @@
       </div>
     
       <div>
-        <form id="form" action="submit.php" method="post">
+        <form id="form" action="submit.php" method="post" autocomplete="on">
           <legend>Or drop me a message and I will respond as soon as possible!</legend>
           <div>
-              <label for="name">Name: </label>
+              <label for="name" autocomplete="on">Name: </label>
               <input type="text" id="name" name="name" placeholder="Duong Do" required>
           </div>
           
           <div>
-              <label for="email">Email: </label>
+              <label for="email" autocomplete="on">Email: </label>
               <input type="text" id="email" name="email" placeholder="xyz@gmail.com" required>
           </div>
 
